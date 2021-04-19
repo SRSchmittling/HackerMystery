@@ -2,15 +2,15 @@
 ## Technical Manual
 
 
-Computers seem mysterious, but in reality they only understand 1's and 0's. But how do they understand 1s and 0s?  Because in fact what they REALLY understand is the presence (1) or absence (0) of voltage.  They work on the same level as that lighbulb in your kitchen that turns on when the switch is in the "on" position and off when it's in the, well..., "off" position. Humans don't really get voltage/no voltage so we use 1/0 instead. But really we don't like 1/0 much either, so we translate the 1/0 into a code that provides instructions to the computer called machine code. Machine Code is a binary representation of the instructions (1's and 0's). We go one step further and translate the machine code into a readable programming language called assembly language which still isn't that pretty, so we then translate THAT into a programming language like C, Java or Python. These levels of translation are called Abstraction and this is our basis for being able to make computers do what we want.
+Computers seem mysterious, but in reality they only understand 1's and 0's. More specifically, they understand the presence (1) or absence (0) of voltage. In your kitchen you observe the presence of voltage when you turn on a light switch and the light goes on. When the light is off, no voltage is presence (light switch is off). So computers "understand" voltage/ no voltage, but how are they able to perform work using only voltage / no voltage? Well humans created machine code which in coordination with hardware in the computer, allows computers to perform specific instructions. Machine Code is a binary representation of the instructions (1's and 0's). We go one step further and translate the machine code into a readable programming language called assembly language which still isn't that pretty, so we then translate THAT into a programming language like C, Java or Python. These levels of translation are called Abstraction and this is the basis for being able to make computers do what we want.
 
 ### Machine Code
-How does machine code work? Machine code works because it is the order and location of the 1s and 0s that provide info about what the computer should do.  There is a limited number of instructions the computer recognizes and everything we are able to do on a computer: we can do with these instructions. Very simple systems may have just a few instructions while more sophisticated ones have more.
+How does machine code work? It is the order of the 1s and 0s that allow the computer to understand machine code. A system is designed to be able to interpret a certain number of instructions. Each instruction has a form the computer recognizes. The form it recognizes is called its Instruction Set Architecture. 
 
 ### SillySimple Architecture
 Snoodle Corp's computer system is very simple and only has 8 possible instructions numbered 0-7. 
 
-In addition, the SillySimple system has two places where information is stored: registers and memory. Most instructions either use values stored in a register or a value encoded in the instruction itself. Two instructions GET and STORE retrieve (GET) or store (uh, STORE) a value in memory.
+In addition, the SillySimple system has 8 registers (numbered 0-7) which are places where information and calculations are stored. Registers are able to store values up to 255. The SillySimple system is very basic and only stores positive numbers. If a calculation leads to a negative number, the result is set to 0. On the other hand, if a calculation 
 
 >Registers: there are eight registers numbered 0-7 (in binary). These are locations that store numbers short term. They are sort of like a whiteboard where you can save calculations.
 

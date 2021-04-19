@@ -11,7 +11,7 @@ You have been contacted because you are an expert in the field of Ethical Hackin
 
 They are infiltrating our system using machine code. We have clues regarding who the hacker is, what language they are using and their location. However, these clues can only be solved using machine code.
 
-Our system uses the SillySimple architecture. Your task is to use the SillySimple Manual we've provided. It describes the machine code recognized by our systems. Using the instructions that the dark hackers used and some other information, you will decode the instructions. You will then use this information to identify clues that will help you figure out the name, location and language they are using.
+Our system uses the SillySimple architecture. Your task is to use the SillySimple Manual we've provided. It describes the machine code recognized by our systems. Using the instructions that the dark hackers used and initial values stored in registers (described in the Manual), you will decode the instructions. You will then use this information to identify clues that will help you figure out the name, location and language they are using.
 
 - [X] I accept.
 - [ ] I must humbly decline. 
