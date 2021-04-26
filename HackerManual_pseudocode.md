@@ -2,10 +2,11 @@
 
 This manual provides intel on the computer language the dark hackers are using to break into our system and steal info.
 
-The dark hackers are using a **procedural** language. A procedural language breaks a large task into smaller subtasks (simple steps). The simple tasks are made up of different code blocks. This manual provides a description of different code blocks that hackers can use.
+The dark hackers are using a **procedural** language. A procedural language breaks a large task into smaller subtasks (simple steps). The simple tasks are made up of different code blocks. This manual provides a description of different code blocks that hackers can use.  **RECOMMENDATION FROM HAYDEN: give a concrete example to help students understand, e.g. a recipe.**
 
 ## Variables
-The hackers use variables to store values. We try to give variables meaningful names that tell us what the variable is for. There are four kinds of variables: decimal, integer, character and boolean. Decimal values can be fractional: they have a decimal point (e.g., 3.5, 2.1, 5.0). Integer values are whole numbers (e.g., 2, 4, 6). Character values are letters or strings which we put in quotes (e.g., 'a', 'cat', 'My name is '). Boolean is a special kind of variable that has only two values: `true` or `false`. These values are generally also seen as `1` or `0`, respectively.
+**RECOMMENDATION FROM HAYDEN: reduce type of variables to two: integer and boolean.**
+The hackers use variables to store values. We try to give variables meaningful names that tell us what the variable is for. There are four kinds of variables: decimal, integer, character and boolean. Decimal values can be fractional: they have a decimal point (e.g., 3.5, 2.1, 5.0). Integer values are whole numbers (e.g., 2, 4, 6). Character values are letters or strings which we put in quotes (e.g., 'a', 'cat', 'My name is '). Boolean is a special kind of variable that has only two values: `true` or `false`. These values are generally also seen as `1` or `0`, respectively. **SUGGESTION BY HAYDEN: maybe relate to algebraic variables, e.g. y = x+5. y is an independent variable and x is the dependent variable.**
 
 ## Assignment
 Assignment blocks consist of setting a variable to a value (number or string). We can also set variables equal to other previously set variables.
