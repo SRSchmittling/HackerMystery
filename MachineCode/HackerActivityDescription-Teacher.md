@@ -26,6 +26,9 @@ Each [group/student] should have the following:
 #### **Hacker Assignment Dossier**
 Student is an Ethical Hacker approached by Snoodle Corp, a giant tech corporation, to identify the dark hacker who has infiltrated their computer system. The Dossier describes their mission if they choose to accept it, which they do.
 
+#### **Hacker Name**
+Students are ask to identify their Ethical Hacker pseudonym. A table provides a fun way to generate one. Students can follow the instructions or create their own using ideas from this document.
+
 #### **SillySimple Architecture Manual**
 This document provides information about how instruction set architecture machine code works. It also provides details on the SillySimple Architecture machine code.
 
