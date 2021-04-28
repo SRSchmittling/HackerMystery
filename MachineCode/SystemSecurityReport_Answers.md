@@ -16,20 +16,22 @@ We have narrowed down the possibilities through external intelligence:
 
 ### Commands Executed During Phase 1
 
-1. 0101110101000000
-2. 0000000011000001
-3. 0000000001000010
-4. 0011010001000100
-5. 0110110001000110
-6. 0010100000000100
-7. 0000000011000001
-8. 1110010000000000
+1. 010 111 0 101 000 000 | R7 > R5, R0 = 1
+2. 000 000 0 011 000 001 | R1 = R0 + R3
+3. 000 000 0 001 000 010 | R2 = R0 + R1 
+4. 001 101 0 001 000 100 | R4 = R5 - R1 
+5. 011 011 0 001 000 110 | R3 < R1, R6 = 1
+6. 001 010 0 000 000 100 | R4 = R2 - R0
+7. 000 000 0 011 000 001 | R1 = R0 + R3
+8. 111 001 0 000 000 000 | R1 = 0
+
+
 
 ### Fill in Final Register Values for Phase 1 Here
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| _______ | _______ | _______ | _______ | _______ | _______ | _______ | _______ |
+|    0    |    2    |    3    |    1    |    2    |    4    |   10    |   8     |
 
 * The number of the register that has a final value of 10 is a valid clue (in the list of Possible Clues from Phase 1 below).
 * The value in Register 2 (010) is a valid clue.
@@ -41,13 +43,13 @@ We have narrowed down the possibilities through external intelligence:
 
    2. [ ] Language is either a reptile or a tasty beverage.
 
-   3. [ ] Hacker has a number in their name.
+   3. [X] Hacker has a number in their name.
 
    4. [ ] The location is in a lab.
 
-   5. [ ] The language has repeated characters.
+   5. [X] The language has repeated characters.
 
-   6. [ ] The location is not at home.
+   6. [X] The location is not at home.
 
 ## Phase 2 
 
@@ -59,20 +61,20 @@ We have narrowed down the possibilities through external intelligence:
 
 ### Commands Executed During Phase 2
 
-1. 0101100101000111
-2. 0000010111000000
-3. 1111110000000000
-4. 0110010100000010
-5. 0001000001000110
-6. 1000000100000101
-7. 0001100001000011
-8. 1110010000000000
+1. 010 110 0 101 000 111 | R6 > R5, R7 = 1
+2. 000 001 0 111 000 000 | R0 = R1 + R7
+3. 111 111 0 000 000 000 | R7 = 0
+4. 011 001 0 100 000 010 | R1 < R4, R2 = 1
+5. 000 100 0 001 000 110 | R6 = R4 + R1
+6. 100 000 0 100 000 101 | R0 = R4, R5 = 1
+7. 000 110 0 001 000 011 | R3 = R6 + R1
+8. 111 001 0 000 000 000 | R1 = 0
 
 ### Fill in Final Register Values for Phase 2 Here
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| _______ | _______ | _______ | _______ | _______ | _______ | _______ | _______ |
+|    2    |    1    |    1    |    4    |    1    |   3     |   3     |    1    |
 
 * The final value in Register 7 is a valid clue.
 * The maximum final value of all the registers is a valid clue
@@ -80,13 +82,13 @@ We have narrowed down the possibilities through external intelligence:
 
 ### Possible Clues From Phase 2
 
-   1. [ ] Pirates say this.
+   1. [X] Pirates say this.
 
    2. [ ] The location rhymes with Weevel Hair.
 
-   3. [ ] You can't get a 32oz. Slurpy here!
+   3. [X] You can't get a 32oz. Slurpy here!
 
-   4. [ ] Their name is a sound a computer makes.
+   4. [X] The hacker's name is a sound a computer makes.
 
    5. [ ] The Hacker Name is an old-school fist bump.
 

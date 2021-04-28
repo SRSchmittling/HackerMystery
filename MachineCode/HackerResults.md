@@ -14,7 +14,7 @@ Item | Clue # 1 | Clue # 2
 -----|----------|---------
 **Hacker** | Hacker has a number in their name | Their name is a sound a computer makes.
 **Language** | The language has repeated characters | Pirates say this.
-**Location** | The location is not at home | You can't get a 24oz. Slurpy here!
+**Location** | The location is not at home | You can't get a 32oz. Slurpy here!
 
 
 ## Solution
