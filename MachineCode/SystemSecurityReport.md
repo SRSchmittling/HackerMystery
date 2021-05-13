@@ -1,14 +1,14 @@
 # System Security Report
 
-The dark hackers attacked our system in two phases at different times. We discovered the initial values in the registers for both phases before their commands were executed, as well as a list of commands they executed. 
+The dark hackers attacked our system in two phases at different times. We discovered the initial values in the registers for both phases before any commands were executed, as well as the list of commands executed during each hack. 
 
-We believe clues to their identity are embedded in the register values after all commands are executed. We seek to determine their hacker name, the high-level language they are using to implmement machine code on our system and the location from which they are completing their nefarious deeds.
+We believe clues to their identity are embedded in the register values after all commands are executed. We seek to determine the name of the hacker, what high-level language they are using to implement machine code on our system and the location from which they completed their nefarious deeds.
 
 We have narrowed down the possibilities through external intelligence:
 
 ## Phase 1
 
-### Initial Register Values
+### Initial Register Values Prior to Phase 1 Commands
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
@@ -16,14 +16,14 @@ We have narrowed down the possibilities through external intelligence:
 
 ### Commands Executed During Phase 1
 
-1. 0101110101000000
-2. 0000000011000001
-3. 0000000001000010
-4. 0011010001000100
-5. 0110110001000110
-6. 0010100000000100
-7. 0000000011000001
-8. 1110010000000000
+1. 0101110101000000  
+2. 0000000011000001 
+3. 0000000001000010 
+4. 0011010001000100 
+5. 0110110001000110 
+6. 0010100000000100 
+7. 0000000011000001 
+8. 1110010000000000 
 
 ### Fill in Final Register Values for Phase 1 Here
 

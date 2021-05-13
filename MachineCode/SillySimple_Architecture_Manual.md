@@ -8,9 +8,9 @@ Computers seem mysterious, but in reality they only understand 1's and 0's. More
 How does machine code work? It is the order of the 1s and 0s that allow the computer to understand machine code. A system is designed to be able to interpret a certain number of instructions. Each instruction has a form the computer recognizes. The form it recognizes is called its Instruction Set Architecture. This manual provides a list of the instructions, and their form. In order to decode the instructions the dark hackers used on the system you will need to be able to read the instructions. This includes being able to identify binary numbers up to 7. This is not hard and there is a table at the end of the document with this information.
 
 ### SillySimple Architecture
-Snoodle Corp's computer architecture is very simple and only has 8 possible instructions numbered 0-7. Two of the instructions are reserved for future use. They don't do anything at this time but are available for future use. 
+Snoodle Corp's computer architecture is very simple. The system has 8 registers numbered 0 to 7. Registers are just places to store information, usually calculations. They store values up to 255. In addition, the SillySimple system only stores positive numbers. So, if a calculation leads to a negative number, the result stored in the register will be 0. On the other hand, if a calculation is bigger than 255, the value stored is 255. 
 
-In addition, the SillySimple system has 8 registers (numbered 0-7) which are places where information and calculations are stored. Registers store values up to 255. In addition, the SillySimple system is very basic and only stores positive numbers. So, if a calculation leads to a negative number, the result is 0. On the other hand, if a calculation is bigger than 255, it is capped at 255. 
+The SillySimple system has only 8 possible instructions which are also numbered 0 to 7. Two of these instructions are reserved for future use. They don't do anything at this time but could be added later. Because the registers and instructions are both identified using values between 0 and 7 in binary, it is important that you can recognize the binary values for values in this range. If you don't know binary, **Appendix A** shows the binary representation for the numbers 0 - 7.  
 
 >Instructions: There are eight possible instructions. Each instruction is 16-bits (a bit is one binary digit) long. These instructions can be broken into parts that provide information about what they do. The table below lists the 3-bit binary code for, the name and a description of these instructions. The first three bits tell you which instruction it is:
 
@@ -57,9 +57,11 @@ Here is the format for all of the instructions:
 |     NA       | 110      | NA  | NA | NA | NA | NA |
 | CLEAR        | 111      | R1  | 0 | 000 | 000 | 000 |
 
-The Subtract, Greater_Than, Less_Than and Equal_To instructions are all laid out the same way as the ADD instruction. For the Clear instruction only the first 6 bits are used. The first three are '111' which is the instruction number (7), the next 3 bits represent the number of the register that will be cleared in binary.
+Every instruction is composed of 16 bits. However, not all bits are used in every instruction. Unused bits are set to 0 as placeholders. The Subtract, Greater_Than, Less_Than and Equal_To instructions are all laid out the same way as the ADD instruction. Only the first 6 bits of the Clear instruction only the first 6 bits are set. The first three are '111' which is the instruction number (7), the next 3 bits represent the number of the register in binary that will be cleared, the remaining zeros are just placeholders.
 
-Appendix B has a Worksheet with answers that will ensure that you understand the SillySimple Architecture fully.
+>Example: to clear register 5, the instruction would be **111 101 0000000000**. The instruction is broken up to make it easier to read.
+
+Appendix B has a Worksheet with an answer key. This Worksheet will let you know if you understand how the SillySimple Architecture works.
 
 
 # APPENDIX A
@@ -91,16 +93,16 @@ The initial values for the registers are:
 
 Commands Issued:
 
-1. 0000000001000101
-2. 0101010111000011
-3. 0011110101000010
-4. 1111010000000000
-5. 0110110100000000
-6. 0001000000000010
-7. 1001110010000100
-8. 1111010000000000
-9. 0001100111000101
-10. 0011110110000000
+1. 000 000 0 001 000 101
+2. 010 101 0 111 000 011
+3. 001 101 0 111 000 010
+4. 111 001 0000000000
+5. 011 011 0 100 000 000
+6. 000 010 0 011 000 001
+7. 000 100 0 010 000 110
+8. 100 111 0 110 000 100
+9. 111 011 0000000000
+10. 001 110 0 010 000 000
 
 Fill in the table below by providing the values of each register after the instruction # in the first column has been executed.
 
@@ -128,18 +130,18 @@ Initial Values in registers:
 |    3    |    7    |    7    |    2    |    5    |    0    |    0    |    8    |
 
 
-| Instruction | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) | Result (Register #s appear in parentheses) |
+| Instruction | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) | Result (Values in Registers appear in parentheses) |
 |-------------|---------|---------|---------|---------|---------|---------|---------|---------|--------|
-|       1     |    3    |   7     |   7     |   2     |    **5**    |  10     |   0     |    8    | R3 (5) = R1 (0) + R2 (1) |
-|       2     |    3    |   7     |   7     |   2     |    5    |  10     |   **1**     |    8    | R1 (5) > R2 (7), **R3 (6)=1**, else R3 (6)=0 |
-|       3     |    3    |   7     |   **0**     |   2     |    5    |  10     |   1     |    8    | R3 (2) = R1 (7) - R2 (5) |
-|       4     |    3    |   7     |   0     |   2     |    5    |  10     |   1     |    8    | R1 (5) = 0 | PROBLEM, FIX
-|       5     |    3    |   7     |   0     |   2     |    5    |  10     |   1     |    8    | R1 (3) < R2 (4), R3 (0)= 1, else **R3 (0) =0** |
-|       6     |    3    |   7     |   8     |   2     |    5    |  10     |   1     |    8    | R3 (2) = R1 (4) + R2 (0) |
-|       7     |    3    |   7     |   8     |   2     |    1    |  10     |   1     |    8    | R1 (7) = R2 (2), **R3 (4)=1**, else R3 (4)= 0
-|       8     |    3    |   7     |   8     |   2     |    1    |  0      |   1     |    8    | R1 (5) = 0
-|       9     |    3    |   7     |   8     |   2     |    1    |  9      |   1     |    8    | R3 (5) = R1 (6) + R2 (7) 
-|      10     |    7    |   7     |   8     |   2     |    0    |  0      |   1     |    8    | R3 (0) = R1 (7) - R2 (6) 
+|       1     |    3    |   7     |   7     |   2     |    5    |  **10**     |   0     |    8    | R5 (10) = R0 (3) + R1 (7) |
+|       2     |    3    |   7     |   7     |   **1**     |    5    |  10     |   0     |    8    | if R5 (10) > R7 (8), **R3 = 1**, else R3=0 |
+|       3     |    3    |   7     |   **2**     |   1     |    5    |  10     |   0     |    8    | R2 (2) = R5 (10) - R7 (8) |
+|       4     |    3    |   **0**     |   2     |   1     |    5    |  10     |   0     |    8    | R1 = 0 | 
+|       5     |    **1**    |   0     |   2     |   1     |    5    |  10     |   0     |    8    | if R3 (1) < R4 (5), **R0 = 1**, else R0 = 0 |
+|       6     |    1    |   **3**     |   2     |   1     |    5    |  10     |   0     |    8    | R1 (3) = R2 (2) + R3 (1) |
+|       7     |    1    |   3     |   2     |   1     |    5    |  10     |   **7**     |    8    | R6 (7) = R4 (5) + R2 (2) |
+|       8     |    1    |   3     |   2     |   1     |    **0**    |  10      |   7     |    8    | if R7 (8) = R6 (7), R4 = 1, else **R4 = 0** |
+|       9     |    1    |   3     |   2     |   **0**     |    0    |  10      |   7     |    8    | R3 = 0 |
+|      10     |    **5**    |   3     |   2     |   0     |    0    |  10      |   7     |    8    | R0 (5) = R6 (7) - R2 (2) |
 
 Final Values in registers:
 
