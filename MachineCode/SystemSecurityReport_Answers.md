@@ -6,9 +6,30 @@ We believe clues to their identity are embedded in the register values after all
 
 We have narrowed down the possibilities through external intelligence:
 
+Hacker Name is one of the following:
+
+* Whiskers
+* Hi-5
+* Bl33p
+* RayZ0r
+
+The Hacker is using one of the following high-level languages:
+
+* Boa
+* Arrrrr
+* MochaScript
+* C++++
+
+Our reconnaisance drones have narrowed down the location of our hacker to one of the following:
+
+* Corner Grab & Go
+* Evil Lair (aka hacker's bedroom)
+* Mom's Basement
+* High School Computering Lab
+
 ## Phase 1
 
-### Initial Register Values
+### Initial Register Values For Phase 1
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
@@ -18,14 +39,25 @@ We have narrowed down the possibilities through external intelligence:
 
 1. 010 111 0 101 000 000 | R7 > R5, R0 = 1
 2. 000 000 0 011 000 001 | R1 = R0 + R3
-3. 000 000 0 001 000 010 | R2 = R0 + R1 
-4. 001 101 0 001 000 100 | R4 = R5 - R1 
-5. 011 011 0 001 000 110 | R3 < R1, R6 = 1
-6. 001 010 0 000 000 100 | R4 = R2 - R0
-7. 000 000 0 011 000 001 | R1 = R0 + R3
-8. 111 001 0 000 000 000 | R1 = 0
+3. 001 101 0 001 000 100 | R4 = R5 - R1 
+4. 011 101 0 111 000 010 | R5 < R7, R2 = 1 
+5. 000 111 0 100 000 110 | R6 = R7 + R4
+6. 100 001 0 101 000 011 | R1 = R5, R3 = 0
+7. 000 000 0 001 000 010 | R2 = R0 + R1
+8. 111 111 0 000 000 000 | R7 = 0
 
+### Fill in the Register For Each Instruction Executed During Phase 1
 
+| Instruction | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
+|-------------|---------|---------|---------|---------|---------|---------|---------|---------|
+|       1     | **1**   |   0     |   0     |   1     |   0     |   4     |   0     |   8     |
+|       2     |   1     | **2**   |   0     |   1     |   0     |   4     |   0     |   8     |
+|       3     |   1     |   2     |   0     |   1     | **2**   |   4     |   0     |   8     |
+|       4     |   1     |   2     | **1**   |   1     |   2     |   4     |   0     |   8     |
+|       5     |   1     |   2     |   0     |   1     |   0     |   4     | **10**  |   8     |
+|       6     |   1     |   2     |   0     | **0**   |   0     |   4     |   0     |   8     |
+|       7     |   1     |   2     | **3**   |   1     |   0     |   4     |   0     |   8     |
+|       8     |   1     |   2     |   3     |   1     |   0     |   4     |   0     | **0**   |
 
 ### Fill in Final Register Values for Phase 1 Here
 
@@ -53,7 +85,7 @@ We have narrowed down the possibilities through external intelligence:
 
 ## Phase 2 
 
-### Initial Register Values
+### Initial Register Values for Phase 2
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
@@ -70,27 +102,44 @@ We have narrowed down the possibilities through external intelligence:
 7. 000 110 0 001 000 011 | R3 = R6 + R1
 8. 111 001 0 000 000 000 | R1 = 0
 
+### Fill in the Register For Each Instruction Executed During Phase 2
+
+| Instruction | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
+|-------------|---------|---------|---------|---------|---------|---------|---------|---------|
+|       1     |    1    |    1    |    0    |    0    |    2    |    3    |    7    |  **1**  |
+|       2     |  **2**  |    1    |    0    |    0    |    2    |    3    |    7    |    1    |
+|       3     |    2    |    1    |    0    |    0    |    2    |    3    |    7    |  **0**  |
+|       4     |    2    |    1    |  **1**  |    0    |    2    |    3    |    7    |    0    |
+|       5     |    2    |    1    |    1    |    0    |    2    |    3    |  **3**  |    0    |
+|       6     |    2    |    1    |    1    |    0    |    2    |  **1**  |    3    |    0    |
+|       7     |    2    |    1    |    1    |  **4**  |    2    |    1    |    3    |    0    |
+|       8     |    2    |  **0**  |    1    |    4    |    2    |    1    |    3    |    0    |
+
 ### Fill in Final Register Values for Phase 2 Here
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-|    2    |    1    |    1    |    4    |    1    |   3     |   3     |    1    |
+|    2    |    0    |    1    |    4    |    2    |   1     |   3     |    0    |
 
-* The final value in Register 7 is a valid clue.
+* The final value in Register 5 is a valid clue.
 * The maximum final value of all the registers is a valid clue
 * The sum of the final value in Register 2 and Register 0 is a valid clue
 
 ### Possible Clues From Phase 2
 
-   1. [X] Pirates say this.
+   1. [X]  The name of the language is something pirates say.
 
    2. [ ] The location rhymes with Weevel Hair.
 
-   3. [X] You can't get a 32oz. Slurpy here!
+   3. [X] You can't get a 32oz. Slurpy at the hacker's location!
 
    4. [X] The hacker's name is a sound a computer makes.
 
-   5. [ ] The Hacker Name is an old-school fist bump.
+   5. [ ] The hacker's name is an old-school fist bump.
 
    6. [ ] The language is a mediocre grade on an assignment (sort of).
 
+## Solution
+**Hacker Name:**  Bl33p
+**Language:**  Arrrrr
+**Location:** High School Computer Lab

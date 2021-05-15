@@ -6,6 +6,27 @@ We believe clues to their identity are embedded in the register values after all
 
 We have narrowed down the possibilities through external intelligence:
 
+Hacker Name is one of the following:
+
+* Whiskers
+* Hi-5
+* Bl33p
+* RayZ0r
+
+The Hacker is using one of the following high-level languages:
+
+* Boa
+* Arrrrr
+* MochaScript
+* C++++
+
+Our reconnaisance drones have narrowed down the location of our hacker to one of the following:
+
+* Corner Grab & Go
+* Evil Lair (aka hacker's bedroom)
+* Mom's Basement
+* High School Computer Lab
+
 ## Phase 1
 
 ### Initial Register Values Prior to Phase 1 Commands
@@ -16,14 +37,28 @@ We have narrowed down the possibilities through external intelligence:
 
 ### Commands Executed During Phase 1
 
-1. 0101110101000000  
-2. 0000000011000001 
-3. 0000000001000010 
-4. 0011010001000100 
-5. 0110110001000110 
-6. 0010100000000100 
-7. 0000000011000001 
-8. 1110010000000000 
+1. 0101110101000000
+2. 0000000011000001
+3. 0011010001000100 
+4. 0111010111000010 
+5. 0001110100000110
+6. 1000010101000011
+7. 0000000001000010
+8. 1111110000000000
+
+### Fill in the Register For Each Instruction Executed During Phase 1
+
+| Instruction | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
+|-------------|---------|---------|---------|---------|---------|---------|---------|---------|
+|       1     |         |         |         |         |         |         |         |         |
+|       2     |         |         |         |         |         |         |         |         |
+|       3     |         |         |         |         |         |         |         |         |
+|       4     |         |         |         |         |         |         |         |         |
+|       5     |         |         |         |         |         |         |         |         |
+|       6     |         |         |         |         |         |         |         |         |
+|       7     |         |         |         |         |         |         |         |         |
+|       8     |         |         |         |         |         |         |         |         |
+
 
 ### Fill in Final Register Values for Phase 1 Here
 
@@ -68,27 +103,41 @@ We have narrowed down the possibilities through external intelligence:
 7. 0001100001000011
 8. 1110010000000000
 
+### Fill in the Register For Each Instruction Executed During Phase 2
+
+| Instruction | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
+|-------------|---------|---------|---------|---------|---------|---------|---------|---------|
+|       1     |         |         |         |         |         |         |         |         |
+|       2     |         |         |         |         |         |         |         |         |
+|       3     |         |         |         |         |         |         |         |         |
+|       4     |         |         |         |         |         |         |         |         |
+|       5     |         |         |         |         |         |         |         |         |
+|       6     |         |         |         |         |         |         |         |         |
+|       7     |         |         |         |         |         |         |         |         |
+|       8     |         |         |         |         |         |         |         |         |
+
+
 ### Fill in Final Register Values for Phase 2 Here
 
 | 0 (000) | 1 (001) | 2 (010) | 3 (011) | 4 (100) | 5 (101) | 6 (110) | 7 (111) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | _______ | _______ | _______ | _______ | _______ | _______ | _______ | _______ |
 
-* The final value in Register 7 is a valid clue.
+* The final value in Register 5 is a valid clue.
 * The maximum final value of all the registers is a valid clue
 * The sum of the final value in Register 2 and Register 0 is a valid clue
 
 ### Possible Clues From Phase 2
 
-   1. [ ] Pirates say this.
+   1. [ ] The name of the language is something pirates say.
 
    2. [ ] The location rhymes with Weevel Hair.
 
-   3. [ ] You can't get a 32oz. Slurpy here!
+   3. [ ] You can't get a 32oz. Slurpy at the hacker's location!
 
-   4. [ ] Their name is a sound a computer makes.
+   4. [ ] The hacker's name is a sound a computer makes.
 
-   5. [ ] The Hacker Name is an old-school fist bump.
+   5. [ ] The hacker's name is an old-school fist bump.
 
    6. [ ] The language is a mediocre grade on an assignment (sort of).
 
