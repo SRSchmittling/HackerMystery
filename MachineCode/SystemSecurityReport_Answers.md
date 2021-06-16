@@ -12,6 +12,7 @@ Hacker Name is one of the following:
 * Hi-5
 * Bl33p
 * RayZ0r
+* BuzzLightYr
 
 The Hacker is using one of the following high-level languages:
 
@@ -19,13 +20,15 @@ The Hacker is using one of the following high-level languages:
 * Arrrrr
 * MochaScript
 * C++++
+* Sapphire
 
 Our reconnaisance drones have narrowed down the location of our hacker to one of the following:
 
 * Corner Grab & Go
 * Evil Lair (aka hacker's bedroom)
 * Mom's Basement
-* High School Computering Lab
+* High School Computer Lab
+* Tea Lab (Local Boba Tea joint)
 
 ## Phase 1
 
@@ -54,10 +57,10 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 |       2     |   1     | **2**   |   0     |   1     |   0     |   4     |   0     |   8     |
 |       3     |   1     |   2     |   0     |   1     | **2**   |   4     |   0     |   8     |
 |       4     |   1     |   2     | **1**   |   1     |   2     |   4     |   0     |   8     |
-|       5     |   1     |   2     |   0     |   1     |   0     |   4     | **10**  |   8     |
-|       6     |   1     |   2     |   0     | **0**   |   0     |   4     |   0     |   8     |
-|       7     |   1     |   2     | **3**   |   1     |   0     |   4     |   0     |   8     |
-|       8     |   1     |   2     |   3     |   1     |   0     |   4     |   0     | **0**   |
+|       5     |   1     |   2     |   1     |   1     |   2     |   4     | **10**  |   8     |
+|       6     |   1     |   2     |   1     | **0**   |   2     |   4     |   10    |   8     |
+|       7     |   1     |   2     | **3**   |   0     |   2     |   4     |   10    |   8     |
+|       8     |   1     |   2     |   3     |   0     |   2     |   4     |   10    | **0**   |
 
 ### Fill in Final Register Values for Phase 1 Here
 
@@ -79,7 +82,7 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 
    4. [ ] The location is in a lab.
 
-   5. [X] The language has repeated characters.
+   5. [X] The language contains characters that repeat in a row.
 
    6. [X] The location is not at home.
 

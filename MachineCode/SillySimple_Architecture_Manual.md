@@ -36,16 +36,16 @@ The table below lists the 3-bit binary code for, the name and a description of t
 
 | 1st 3 Bits | Instruction | Description | Result of Execution |
 |--------------|-------------|-------------|---------|
-| 000 | ADD | Adds the values in one register (R1) to the value in another (R2) and stores it in a third (R3). | A3 = A1 + R2 |
-| 001 | SUBTRACT | Substracts the value in one register from a value in another and stores it in a third register. | A3 = A1 - A2 | 
-| 010 | GREATER_THAN | If the value in one register is greater than the value of another, sets a third register equal to 1 (true), otherwise the third register is set to 0. | If A1 > A2, A3=1, else A3=0 |
-| 011 | LESS_THAN | If the value in one register is less than the value of another, sets a third register equal to 1 (true), otherwise the third register is set to 0.  | If A1 < A2, A3=1, else A3=0 |
-| 100 | EQUAL_TO | If the value in one register is equal to the value of another, sets a third register equal to 1 (true), otherwise the third register is set to 0. | If A1=A2, then A3=1, else A3=0 |
+| 000 | ADD | Adds the values in one register (A1) to the value in another (A2) and stores it in a third (A3). | A3 = A1 + R2 |
+| 001 | SUBTRACT | Substracts the value in one register (A1) from a value in another (A2) and stores it in a third register (A3). | A3 = A1 - A2 | 
+| 010 | GREATER_THAN | If the value in one register (A1) is greater than the value of another (A2), set a third register equal to 1 (A3=1), otherwise the third register is set to 0 (A3=0). | If A1 > A2, A3=1, else A3=0 |
+| 011 | LESS_THAN | If the value in one register (A1) is less than the value of another (A2), set a third register equal to 1 (A3=1), otherwise the third register is set to 0 (A3=0).  | If A1 < A2, A3=1, else A3=0 |
+| 100 | EQUAL_TO | If the value in one register (A1) is equal to the value of another (A2), set a third register equal to 1 (A3=1), otherwise the third register is set to 0 (A3=0). | If A1=A2, then A3=1, else A3=0 |
 | 101 | for future use | not applicable | not applicable | 
 | 110 | for future use | not applicable | not applicable |
-| 111 | CLEAR | Sets the value in a register to 0. | A1 = 0 |
+| 111 | CLEAR | Sets the value in a register (A1) to 0. | A1 = 0 |
 
-In the table above, the description for the ADD instruction says: "Adds the value in one register (R1) to the value in another (R2) and stores it in a  third (R3)." How does the computer know what registers it should take values from and which register to store the result to? Each instruction has a form (they are all pretty similar). The locations of the 1s and 0s in the instruction provide information about what registers get used. Let's look at an example. 
+In the table above, the description for the ADD instruction says: "Adds the value in one register (A1) to the value in another (A2) and stores it in a  third (A3)." How does the computer know what registers it should take values from and which register to store the result to? Each instruction has a form (they are all pretty similar). The locations of the 1s and 0s in the instruction provide information about what registers get used. Let's look at an example. 
 
 Here is the format for all of the instructions:
 
