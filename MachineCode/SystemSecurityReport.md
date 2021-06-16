@@ -12,6 +12,7 @@ Hacker Name is one of the following:
 * Hi-5
 * Bl33p
 * RayZ0r
+* BuzzLightYr
 
 The Hacker is using one of the following high-level languages:
 
@@ -19,6 +20,7 @@ The Hacker is using one of the following high-level languages:
 * Arrrrr
 * MochaScript
 * C++++
+* Sapphire
 
 Our reconnaisance drones have narrowed down the location of our hacker to one of the following:
 
@@ -26,6 +28,7 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 * Evil Lair (aka hacker's bedroom)
 * Mom's Basement
 * High School Computer Lab
+* Tea Lab (Local Boba Tea joint)
 
 ## Phase 1
 
@@ -80,7 +83,7 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 
    4. [ ] The location is in a lab.
 
-   5. [ ] The language has repeated characters.
+   5. [ ] The language contains characters that repeat in a row.
 
    6. [ ] The location is not at home.
 
@@ -129,7 +132,7 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 
 ### Possible Clues From Phase 2
 
-   1. [ ] The name of the language is something pirates say.
+   1. [ ] The name of the language is something pirates say or is pirate treasure.
 
    2. [ ] The location rhymes with Weevel Hair.
 
