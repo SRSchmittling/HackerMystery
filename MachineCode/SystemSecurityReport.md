@@ -75,17 +75,17 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 
 ### Possible Clues From Phase 1 (Check Valid Clues)
 
-   1. [ ] Hacker Name is related to shaving.
+   C1. [ ] Hacker Name is related to shaving.
 
-   2. [ ] Language is either a reptile or a tasty beverage.
+   C2. [ ] Language is either a reptile or a tasty beverage.
 
-   3. [ ] Hacker has a number in their name.
+   C3. [ ] Hacker has a number in their name.
 
-   4. [ ] The location is in a lab.
+   C4. [ ] The location is in a lab.
 
-   5. [ ] The language contains characters that repeat in a row.
+   C5. [ ] The language contains characters that repeat in a row.
 
-   6. [ ] The location is not at home.
+   C6. [ ] The location is not at home.
 
 ## Phase 2 
 
@@ -132,15 +132,15 @@ Our reconnaisance drones have narrowed down the location of our hacker to one of
 
 ### Possible Clues From Phase 2
 
-   1. [ ] The name of the language is something pirates say or is pirate treasure.
+   C1. [ ] The name of the language is something pirates say or is pirate treasure.
 
-   2. [ ] The location rhymes with Weevel Hair.
+   C2. [ ] The location rhymes with Weevel Hair.
 
-   3. [ ] You can't get a 32oz. Slurpy at the hacker's location!
+   C3. [ ] You can't get a 32oz. Slurpy at the hacker's location!
 
-   4. [ ] The hacker's name is a sound a computer makes.
+   C4. [ ] The hacker's name is a sound a computer makes.
 
-   5. [ ] The hacker's name is an old-school fist bump.
+   C5. [ ] The hacker's name is an old-school fist bump.
 
-   6. [ ] The language is a mediocre grade on an assignment (sort of).
+   C6. [ ] The language is a mediocre grade on an assignment (sort of).
 
